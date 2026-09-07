@@ -30,9 +30,9 @@ if 'c' not in st.session_state:
 standered_form_inputs,factored_form_inputs,outputs,quadratic_function_output = st.tabs(["Standered Form Inputs", "Factored Form Inputs", "Outputs", "Quadratic Function Output"], key="Tabs", on_change="rerun")
 
 with standered_form_inputs:
-    a = st.number_input("A",help="Enter The A term of your quadratic", value=1,on_change=standered_form_inputs_input_on_change)
-    b = st.number_input("B",help="Enter The B term of your quadratic", value=-5,on_change=standered_form_inputs_input_on_change)
-    c = st.number_input("C",help="Enter The C term of your quadratic", value=6,on_change=standered_form_inputs_input_on_change)
+    a = st.number_input("A",help="Enter The A term of your quadratic", value=1,on_change=standered_form_inputs_input_on_change,min_value=-2**32-1, max_value=2**32-1a)
+    b = st.number_input("B",help="Enter The B term of your quadratic", value=-5,on_change=standered_form_inputs_input_on_change,min_value=-2**32-1, max_value=2**32-1a)
+    c = st.number_input("C",help="Enter The C term of your quadratic", value=6,on_change=standered_form_inputs_input_on_change,min_value=-2**32-1, max_value=2**32-1a)
     if st.session_state["last_tab_with_data_entered"] == "standered_form_inputs":
         if b >= 0 and c >= 0:
             st.session_state["Standered_Equation"] = f'{a}x^2 + {b}x + {c}'
