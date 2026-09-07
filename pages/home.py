@@ -23,6 +23,8 @@ with mid_col:
             st.switch_page("pages/community_shapes.py")
         if st.button("Quadratic Solver"):
             st.switch_page("pages/quadratic_solver.py")
+        if st.button("Random Calcs"):
+            st.switch_page("pages/random_calcs.py")
 with r_col:
     left_col,middle_col,right_col = st.columns([1,2,1])
     with middle_col:

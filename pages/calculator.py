@@ -3,7 +3,7 @@ import json
 from math import sqrt
 st.header("Calculator")
 
-with open("defaultShapes.json","r") as file:
+with open("data/defaultShapes.json","r") as file:
     default_shapes = json.load(file)
 
 if "last_page" not in st.session_state:
