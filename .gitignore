@@ -7,3 +7,7 @@ venv/
 
 # Streamlit secrets
 .streamlit/secrets.toml
+manim_persistent.py
+run_manim.py
+run_manim_editor.py
+send_manim.py
