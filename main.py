@@ -9,8 +9,6 @@ pg = st.navigation([
     st.Page('pages/quadratic_solver.py',title= 'Quadratic Solver'),
     st.Page('pages/matrix.py',title= "Matrix"),
     st.Page('pages/graph.py',title="Graph"),
-    st.Page('pages/random_calcs.py', title="Random Calcs Menu"),
-    st.Page('pages/bloxfruits_mastery_calc.py',title="BloxFruits Mastery Calc")
 ],position="hidden")
 
 pg.run()
