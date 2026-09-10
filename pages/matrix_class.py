@@ -157,7 +157,7 @@ def parse_shape(shape:str) -> tuple:
                 before_x = False
             elif char !=' ':
                 return 0
-    if col == '':
+    if col == '' or row == '':
         return 1
-    dimentions = (row , col)
+    dimentions = (int(row) , int(col))
     return dimentions
