@@ -21,6 +21,10 @@ elif st.session_state['matrix dimentions'] == 1 or st.session_state['matrix dime
     "Your matrix dimentions are not valid please correct the issue"
 elif st.session_state['matrix dimentions'] == 0 :
     "Invalid Character was entered"
+elif st.session_state['matrix dimentions'][0] == 0:
+    "You cant have a matrix with 0 rows"
+elif st.session_state['matrix dimentions'][1] == 0:
+    "You cant have a matrix with 0 coloumns"
 else:
     if st.button("Create Matrix"):
         st.switch_page("pages/matrix_creation.py")
